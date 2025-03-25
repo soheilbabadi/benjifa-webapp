@@ -1,22 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import VideoCard from './component/video/VideoCard';
 function App() {
+  const benji='';
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        {benji}
+        <VideoCard title="My video" description="This is my video" videoUrl="https://picsum.photos/200/300" likes={10} publishDate="2021-10-10" />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
